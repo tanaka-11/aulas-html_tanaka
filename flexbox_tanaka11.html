@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Trabalhando com FlexBox - @_Tanaka11_</title>
+
+<style>
+        /* Evitar problemas com dimensionamentos de elementos (mudando o Box Model) */
+        * { box-sizing: border-box; }
+
+        body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+        /* "Itens" = "article"
+        são os elementos que desejamos alinhar/distribuir usando o flexbox */
+        article {
+            box-shadow: black 1px 1px 5px;
+            padding: 10px;
+            border-radius: 8px;
+
+            /* width = largura 
+                height = altura */
+            width: 30%;
+            height: 400px;
+            /* Se não definir altura para os itens, eles serão esticados de acordo com a altura do .container */
+        }
+
+        /* Container = Elemento no qual ativamos o Flexbox e aplicamos as propriedades de alinhamento/distruibuição */
+        .container {
+        /* Ativando o Flexbox = "display:flex" */
+            display: flex;
+
+            flex-direction: row;
+        /* Direções do Flexbox
+            flex-direction = direcionamento dos itens: 
+            column = vertical 
+            column-reverse = vertical de baixo pra cima
+            row = horizontal (padrão) 
+            row-reverse = horizontal do fim pro começo
+        */
+            
+            justify-content: center ;
+            /* juitify-content = espaçamentos entre os itens*/ 
+            
+           gap: 40px;
+           /* inves das medidas padrões de alinhamento, você que determina o espaço entre os itens */
+
+            /* align-items: center; */
+            /* alinhamento dos itens
+            Se a "flex-direction" for row, se comporta como alinhamento vertical */
+
+            flex-wrap: wrap;
+            /* Se comporta como o <br>, uma quebra do Flexbox */
+
+            align-content: center ;
+            /* alinhamento do grupo inteiro de itens */
+
+            border: solid 5px #ff0000;
+            width: 80%;
+            height: 1500px;
+            margin: auto;
+            /* padding: 10px; */
+
+
+        }
+
+        img {max-width: 100%;}
+
+        .exemplo {
+        /* alinhamento exclusivo de 1 item 
+            align-self: flex-start ;    */
+            align-self: flex-start ;
+            background-color: yellow;
+        }
+
+</style>
+
+</head>
+
+<body>
+    <h1> Trabalhando com FlexBox </h1>
+<hr>
+    <p> Flexbox é um mecanismo CSS3 que permite aplicar facilmente recursos de alinhamento, espaçamento e distruibuição de elementos no HTML. Muito útil na elaboração de layouts.</p>
+ 
+<div class="container">
+    <article class="exemplo">
+        <img src="imagens/mini-apple.jpg" alt="">
+        <h2>Apple</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae dolore delectus veritatis tempore possimus hic. Minus tempora optio sequi.</p>
+    </article>
+
+    <article>
+        <img src="imagens/mini-ibm.jpg" alt="">
+        <h2>IBM</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, cum. Delectus ipsam quia error voluptatibus quos minus, deleniti dolores voluptates.</p>
+    </article>
+
+    <article>
+        <img src="imagens/mini-microsoft.jpg" alt="">
+        <h2>Microsoft</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum, iusto suscipit esse ab dolor asperiores? Iure doloribus atque id.</p>
+    </article>
+
+    <article>
+        <img src="imagens/mini-apple.jpg" alt="">
+        <h2>Apple</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae dolore delectus veritatis tempore possimus hic. Minus tempora optio sequi.</p>
+    </article>
+
+    <article>
+        <img src="imagens/mini-ibm.jpg" alt="">
+        <h2>IBM</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, cum. Delectus ipsam quia error voluptatibus quos minus, deleniti dolores voluptates.</p>
+    </article>
+
+    <article>
+        <img src="imagens/mini-microsoft.jpg" alt="">
+        <h2>Microsoft</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum, iusto suscipit esse ab dolor asperiores? Iure doloribus atque id.</p>
+    </article>
+</div>
+
+
+
+
+
+</body>
+
+</html>

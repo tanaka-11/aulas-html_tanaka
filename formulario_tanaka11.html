@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário - @_Tanaka11_ </title>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: cornflowerblue; background-color: aliceblue;"> Tags e Atributos para formulários </h1>
+<hr>
+
+    <p> <b> Interface com campos para entrada e seleção. </b> </p>
+    <!-- form:post = Formulário de cadastro/contato pelo bancos de dados (alta segurança)-->
+    <!-- form:get = Formulário de busca na propria url (baixa segurança)-->
+   
+    <form action="" method="post">
+    
+        <!-- Checkbox -->
+    <p> 
+        <b>Escolha as tecnologias de sua preferência:</b> <br>
+        <input type="checkbox" name="tecnologias" id="html">
+        <label for="">HTML</label>
+
+        <input type="checkbox" name="tecnologias" id="css">
+        <label for="">CSS</label>
+
+        <input type="checkbox" name="tecnologias" id="js">
+        <label for="">JS</label>
+
+    </p>
+    
+        <!-- Nome : text  -->
+    <p>
+        <label for="nome"> <b>Nome</b> </label>
+        <input required placeholder="Digite seu nome" type="text" name="nome" id="nome">
+    </p>
+    
+    <!-- E-mail : email-->
+    <p>
+        <label for="email"> <b>E-mail</b> </label>
+        <input required placeholder="Digite seu email" type="email" name="email" id="email">
+    </p>
+
+    <!-- Senha : password-->
+    <p>
+        <label for="senha"> <b>Senha</b> </label>
+        <input required placeholder="Digite sua senha" type="password" name="senha" id="senha">
+    </p>
+
+    <!-- Data de nascimento : date -->
+    <p>
+        <label for="data"> <b>Data de Nascimento</b> </label>
+        <input required type="date" name="data" id="data" min="2000-01-01" max="2023-03-03">
+    </p>
+
+    <!-- Assunto : select -->
+    <p>
+        <label for="assunto"> <b>Assunto</b> </label>
+        <select required name="assunto" id="assunto">
+            <option value="-1">...</option>
+            <option value="1">Reclamações</option>
+            <option value="2">Dinheiro</option>
+            <option value="3">Bia Gostosa</option>
+            <option value="4">Ana Fedida</option>
+        </select>
+
+    </p>
+    
+    <!-- Mensagem : textarea --> 
+    <p>
+        <label for="mensagem"> <b>Mensagem</b> </label> <br>
+        <textarea required placeholder="Digite aqui (mínimo de 5 linhas e máximo de 50)" minlength="5" maxlength="50" name="mensagem" id="mensagem" cols="25" rows="5"></textarea>
+    </p>
+  
+    <!-- Botão : button -->
+    <p>
+        <button type="submit">Enviar</button>        
+    </p>
+
+     <!-- Botão ² : radio -->
+     <p>
+        <b>Deseja receber informativos?</b> <br>
+        <input required type="radio" name="informativos" id="sim">
+        <label for="sim">Sim</label>
+
+        <input required type="radio" name="informativos" id="nao">
+        <label for="nao">Não</label>
+       
+    </p>
+
+</form>
+
+
+ 
+</body>
+
+</html>

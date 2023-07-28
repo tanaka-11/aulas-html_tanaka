@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Unidades de medidas - @_Tanaka11_</title>
+
+<style>
+    * {box-sizing: border-box;}
+    body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    
+    /* Elemento/tag RAIZ (16 px é o tamanho padrão)*/
+    html {font-size: 16px;}
+
+    h1 {font-size: 3rem;} /* 48 px */
+    h2 {font-size: 2rem;} /* 32 px */
+    h3 {font-size: 1.5rem;} /* 24 px */
+    p {font-size: 1rem;} /* 16 px */
+
+    #exemplo-viewport {
+        border: solid 1px red;
+        width: 400px;
+        margin: auto;
+        height: 70vh;
+    }
+
+    #um {
+        background-color: yellow;
+        width: 50vw;
+    }
+    #dois {background-color: green;
+    }
+
+
+</style>
+
+</head>
+
+<body>
+    <h1>Unidades de medidas para design responsivo</h1>
+<hr> 
+    
+    <!-- Unidades já conhecidas/usadas px (pixel) e % (porcentagem) -->
+
+    <h2>REM (R-EME)</h2>
+    <p> A medidas R-EME (rem) é relativa ao <code>font-size</code> do elemento <b>raíz html</b>. </p>
+
+    <h3>Lorem, ipsum dolor.</h3>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nemo!</p>
+
+    <ul>
+        <li>teste 1</li>
+        <li>teste 2</li>
+    </ul>
+<hr>
+
+    <h2>VW e VH</h2>
+    <p>As medidas 
+        <abbr title="viewport width">VW (viewport width)</abbr> e 
+        <abbr title="viewport height">VH (viewport height)</abbr>
+         são relativas à área de vizualição do navegador (chamada de viewport)</p>
+    <p>VW diz respeito à largura da viewport e VH diz a respeito à altura da viewport</p>     
+
+    <div id="exemplo-viewport">
+        <div id="um">  
+            <h2>UM</h2>
+            <p>Bia cheirosa .</p>
+        </div>
+
+        <div id="dois">
+            <h3>DOIS</h3>
+            <p>Bia gostosa da minha vida.</p>
+        </div>
+    </div>
+
+    
+
+
+
+
+</body>
+
+</html>
